@@ -16,8 +16,8 @@ driver = webdriver.Chrome(executable_path=chromedriver, options=chromeOptions)
 
 driver.get(url)
 # login to site
-User = driver.find_element_by_xpath('//*[@id="ctl00_ContentPlaceHolder1_txtUID"]').send_keys("2430000000031")
-Password = driver.find_element_by_xpath('//*[@id="ctl00_ContentPlaceHolder1_txtPass"]').send_keys("BH47shahrokh")
+User = driver.find_element_by_xpath('//*[@id="ctl00_ContentPlaceHolder1_txtUID"]').send_keys("")
+Password = driver.find_element_by_xpath('//*[@id="ctl00_ContentPlaceHolder1_txtPass"]').send_keys("")
 Chapta = input("Code : ")
 SiteChapta = driver.find_element_by_xpath('//*[@id="ctl00_ContentPlaceHolder1_ASPxCaptcha1_TB_I"]').send_keys(Chapta)
 Elem = driver.find_element_by_xpath('//*[@id="ctl00_ContentPlaceHolder1_btnOk"]').click()
